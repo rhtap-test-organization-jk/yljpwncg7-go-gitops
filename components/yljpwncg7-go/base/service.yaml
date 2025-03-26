@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: yljpwncg7-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: yljpwncg7-go 
+  name: yljpwncg7-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: yljpwncg7-go 
